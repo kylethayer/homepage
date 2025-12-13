@@ -1,0 +1,17 @@
+<html>
+<script>
+  function toggleImg(){
+    const img = document.getElementById("hdr-img")
+	img.style.display = img.style.display == "none" ? "" : "none"
+  }
+</script>
+<body>
+  <table width="50%"><tbody>
+    <tr><th></th><th width="50%">sRGB</th><th width="50%">Display P3</th></tr>
+    <tr><th>Red</th><td style="background-color: color(srgb 1 0 0);"></td><td style="background-color: color(display-p3 1 0 0);"></td></tr>
+    <tr><th>Green</th><td style="background-color: color(srgb 0 1 0);"></td><td style="background-color: color(display-p3 0 1 0)"></td></tr>
+    <tr><th>Blue</th><td style="background-color: color(srgb 0 0 1);"></td><td style="background-color: color(display-p3 0 0 1);"></td></tr>
+  </tbody></table>
+  <button onclick="toggleImg()">Show/hide hdr img</button><br>
+  <img id="hdr-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/DCI_P3_RGB_color_cube.png/50px-DCI_P3_RGB_color_cube.png"/>
+</body></html>
